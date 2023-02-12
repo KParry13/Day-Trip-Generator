@@ -25,7 +25,11 @@ my_entertainment = Trip_options(Entertainment)
 print ("Entertainment: ",my_entertainment)
 
 
-def determine_satisfaction(currrent_trip, trip_options):
-    
-    
+def determine_satisfaction(current_trip, Trip_options):
+    user_satisfied= input('Are you satisfied with this trip?')
+    yes = ('Awesome! Pack your bags!')
+    no = input('What would you like to change?')
+    if yes:
+        print(yes)
 
+    

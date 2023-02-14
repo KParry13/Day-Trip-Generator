@@ -26,8 +26,12 @@ def run_day_trip():
 
 
 
+
+
+
     print('Does this sound like a trip for you?')
     answer = input('')
+    answer = 'N'
     while answer == 'N':
         print('What is not to your liking?')
         answer = input('')
@@ -42,23 +46,30 @@ def run_day_trip():
             print ("Transportaion: ",my_transportaion)
         elif answer == 'Entertainment':
             my_entertainment = Trip_options(Entertainment)
-            print ("Entertainment: ",my_entertainment)  
+            print ("Entertainment: ",my_entertainment)
+        elif answer == 'Y':
+            print('Great Choice!')
+        else:
+            print('Sorry, that is not an option.')
 
         print('How does this sound?')
-    answer = input('')
-    print('What would you like to change?')
-        
-    if answer == 'Y':
-        print('Great Choice!')
+        answer = input('')
+            
+    
+
+
+
+
+
         
     answer = 'N'
     while answer == 'N':
 
-        print(f"Destination: {my_destiantion}")
+        print("Destination: ", my_destiantion)
         print("Restaurant: ",my_restaurant)
         print("Transportaion: ",my_transportaion)
         print("Entertainment: ",my_entertainment)
-        print ('confirm your trip')
+        print ('Confirm your trip')
         print ('Can we make your reservations?')
         answer = input('Y or N')
         if answer == 'N':
@@ -84,7 +95,6 @@ def run_day_trip():
 
 
 
-    
 
     
 run_day_trip()
